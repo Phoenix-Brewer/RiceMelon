@@ -1,0 +1,825 @@
+pageTitle = Coriander's Warrior Cat Creator
+pageSubtitle = created by Coriander on WCO
+fontSize = 130
+fontColor = black // or "blue" or "green" or "#22c0f5" (hex colour code)
+textAlignment = center // or "left" or "right" or "justify"
+buttonText = Make me a cat!
+numberOfItems = 1
+itemSeperator = <br>
+pageDescription = Use this generator to create a Warrior Cat character, may it be for fanfictions, roleplays, or adopts! Bear in mind that some personallty traits and names may be contradicting; for example, you could get a trait pair like "cheerful yet pessimistic" or a name like "Firefire" or "fireflame". It is a random generator after all, so if this happens feel free to have a good laugh and reroll!
+	$output = <p>[this.joinItems("</p><p>")]</p> // <-- don't remove this last line, it uses the special "$output" property to join and format your description as HTML paragraphs :)
+
+
+// This is what gets output to the visitor:
+output = [sentence]  
+
+// And these are your lists:
+sentence
+//kit
+  [p = prefix.selectOne]kit is {a} [build], [personality1], and [personality2] kit with [fur], [fur2] [marking] fur and [eyecolor] eyes. [kspec] [p]kit's warrior name will be [p][suffix]. [g = gender.selectOne] lives in [clan]. {[g] is the kit of {a warrior|the deputy|the leader}.|[g] is the forbidden offspring of the medicine cat.}
+//apprentice
+	[p = prefix.selectOne]paw is {a} [build], [personality1], and [personality2] {apprentice^0.5|medicine cat apprentice^0.5} with [fur], [fur2] [marking] fur and [eyecolor] eyes. [aspec] [p]paw's warrior name will be [p][suffix]. [gender] lives in [clan].
+//warrior
+  [p = prefix.selectOne][s = suffix.selectOne] is {a} [build], [personality1], and [personality2] {warrior|deputy^0.5} with [fur], [fur2] [marking] fur and [eyecolor] eyes. [wspec] [p][s] is {13-70} moons old. This cat is known for their [mentoringskills] mentoring skills. [gender] lives in [clan].
+//queen
+  [p = prefix.selectOne][s = suffix.selectOne] is {a} [build], [personality1], and [personality2] queen with [fur], [fur2] [marking] fur and [eyecolor] eyes. [qspec] [p][s] is {25-50} moons old. She is {currently taking care of a litter of {1 kit.|{2-5} kits.}|not currently taking care of a litter.} She lives in [clan].^0.5
+//leader
+  [p = prefix.selectOne]star is the [build], [personality1], and [personality2] leader of [clan]. [g = gender.selectOne] has [fur], [fur2] [marking] fur and [eyecolor] eyes. [lspec] [p]star's 9th life was the life of [ninelife]. [g] has {1 life|{2-9} lives} left. [p]star's warrior name was [p][suffix].^0.5
+
+ninelife
+  acceptance
+	appreciation
+	a sense of adventure
+	bravery
+	certainty
+	clear judgement of character
+	compassion
+	confidence
+	courage
+	curiosity
+	endurance
+	determination
+	duty
+	faith
+	fairsightedness
+	forgiveness
+	friendship
+	grace
+	happiness
+	healing
+	honor
+	honoring old traditions
+	hope
+	humility
+	humor
+	instincts
+	judgement
+	justice
+	listening to the Clan
+	love
+	loyalty
+	mercy
+	mentoring
+	nobility
+	offering second chances
+	patience
+	pride
+	protection
+	putting their own Clan above all others.
+	resilience
+	selflessness
+	strength
+	the strength to act without fear
+	stubbornness
+	sympathy
+	tireless energy
+	trust
+	truth
+	understanding
+	understanding that not only warriors protect the Clan
+	understanding that size isn't everything
+	war
+	peace
+	wisdom
+	
+
+mentoringskills
+  atrocious
+	bad
+	mediocre
+	good
+	terrific
+	
+prefix
+	Amber
+  Black
+  Blue
+  Brown
+  Copper
+  Dark
+  Golden
+  Gray
+  Green
+  Pale
+  Red
+  Russet
+  Silver
+  Tawny
+  White
+  Yellow
+  Brindle
+  Dapple
+	Dappled
+  Mottle
+	Mottled
+  Patch
+  Speckle
+  Splash
+  Spotted
+	Badger
+	Bear
+	Buck
+  Deer
+	Doe
+  Fawn
+  Ferret
+  Fox
+  Hare
+  Leopard
+  Lion
+  Mole
+  Mouse
+  Otter
+  Rabbit
+  Rat
+  Sheep
+  Shrew
+  Squirrel
+  Stoat
+  Tiger
+  Vixen
+  Vole
+  Weasel
+  Wolf
+	Bird
+  Buzzard
+  Crow
+  Dove
+  Duck
+  Eagle
+  Feather
+  Finch
+  Goose
+  Hawk
+  Heron
+  Jay
+  Kestrel
+  Lark
+  Owl
+  Quail
+  Raven
+  Robin
+  Sparrow
+  Starling
+  Swallow
+  Swift
+  Thrush
+	Ant
+  Beetle
+  Fly
+  Maggot
+  Moth
+  Spider
+  Wasp
+	Bee
+	Mantis
+	Adder
+  Eel
+  Frog
+  Lizard
+  Minnow
+  Newt
+  Perch
+  Pike
+  Snake
+  Toad
+  Trout
+	Ash
+  Aspen
+  Bark
+  Beech
+  Birch
+  Cedar
+  Cherry
+  Larch
+  Log
+  Maple
+  Marigold
+  Oak
+  Pine
+  Rowan
+  Timber
+  Twig
+  Willow
+	Acorn
+  Apple
+  Berry
+  Cherry
+  Holly
+  Nut
+  Olive
+  Pear
+  Plum
+  Pod
+  Seed
+	Blossom
+  Clover
+  Daisy
+  Flower
+  Lily
+  Heather
+  Petal
+  Poppy
+  Primrose
+  Rose
+	Bracken
+  Bramble
+  Briar
+  Fern
+  Furze
+  Gorse
+  Grass
+  Ivy
+  Hay
+  Hazel
+  Heather
+  Holly
+  Leaf
+  Lichen
+  Moss
+  Mossy
+  Nettle
+  Oat
+  Olive
+  Reed
+  Rush
+  Sedge
+  Sloe
+  Thistle
+  Thorn
+  Vine
+  Weed
+	Mallow
+  Marigold
+  Mint
+  Rye
+  Sage
+  Sorrel
+  Fennel
+	Blizzard
+  Breeze
+  Cloud
+  Dawn
+  Dew
+  Drift
+  Dusk
+  Frost
+  Hail
+  Ice
+  Lightning
+  Mist
+  Misty
+  Moon
+  Morning
+  Night
+  Rain
+  Shade
+  Snow
+  Storm
+  Sun
+  Sunny
+	Boulder
+  Flint
+  Pebble
+  Rock
+  Rubble
+  Sand
+  Sandy
+  Slate
+  Stone
+	Creek
+  Fallow
+  Lake
+  Marsh
+  Meadow
+  Pool
+  Ash
+  Cinder
+  Dust
+  Echo
+  Ember
+  Fire
+  Flame
+  Honey
+  Milk
+  Mud
+  Ripple
+  Scorch
+  Shell
+  Smoke
+  Soot
+  Arch
+  Bounce
+  Crouch
+  Fallen
+  Fleet
+  Jump
+  Mumble
+  Pounce
+  Quick
+  Running
+  Rush
+  Shred
+  Sneeze
+  Splash
+  Swift
+  Tangle
+  Tumble
+	Brave
+  Bright
+  Broken
+  Bumble
+  Claw
+  Crooked
+  Curl
+  Dead
+  Fuzzy
+  Half
+  Heavy
+  Hollow
+  Jagged
+  Kink
+  Little
+  Long
+  Loud
+  Low
+  Odd
+  One
+  Prickle
+  Ragged
+  Sharp
+  Shimmer
+  Shining
+  Short
+  Small
+  Soft
+  Song
+  Stumpy
+  Sweet
+  Tall
+  Talon
+  Tiny
+  Torn
+  Web
+  Wet
+  Whisker
+  Wild
+	
+build
+	small
+	large
+	slender
+	skinny
+	bony
+	muscular
+	heavyset
+	broad
+	chubby
+	thin
+	lithe
+	tall
+	short
+	abnormally small
+	abnormally large
+	long-legged
+	short-legged
+	
+suffix
+  dapple
+  mask
+  speck
+  splash
+  spot
+  spots
+  stripe
+	bee
+	bird
+	feather
+	hawk
+	talon
+	wing
+	berry
+	branch
+	briar
+	burr
+	fern
+	flower
+	leaf
+	stem
+	willow
+	blaze
+  breeze
+  bright
+  cloud
+  dust
+  fire
+  flake
+  flame
+  frost
+  light
+  mist
+  pool
+  puddle
+  shade
+  shine
+  sky
+  snow
+  storm
+  stream
+	belly
+  claw
+  eye
+  eyes
+  face
+  fang
+  foot
+  fur
+  heart
+  jaw
+  leg
+  nose
+  pad
+  pelt
+  scar
+  spirit
+  tail
+  throat
+  tooth
+  tuft
+  whisker
+  drop
+  fall
+  flight
+  leap
+  skip
+  song
+	spirit
+  splash
+  spring
+  step
+  strike
+  watcher
+  whisper
+	
+gender
+  He
+	She
+
+clan
+  ThunderClan
+	RiverClan
+	ShadowClan
+	WindClan
+	SkyClan
+	
+personality1
+  adventurous
+	ambitious
+	approachable
+	articulate
+	autonomous
+	calm
+	charismatic
+	cheerful
+	clever
+	competitive
+	confident
+	cooperative
+	courteous
+	creative
+	curious
+	determined
+	devoted
+	diligent
+	easy-going
+	efficient
+	eloquent
+	energetic
+	enthusiastic
+	flexible
+	focused
+	friendly
+	honest
+	imaginative
+	independent
+	inquisitive
+	insightful
+	intuitive
+	meticulous
+	neurotic
+	open-minded
+	opinionated
+	patient
+	perceptive
+	persuasive
+	procedural
+	punctual
+	quiet
+	relaxed
+	resourceful
+	responsible
+	talkative
+	
+personality2
+  aggressive
+	aloof
+	arrogant
+	belligerent
+	boastful
+	bossy
+	callous
+	careless
+	challenging
+	compulsive
+	cowardly
+	cruel
+	cold
+	cynical
+	decietful
+	dishonest
+	finicky
+	flirtatious
+	foolish
+	greedy
+	grumpy
+	gullible
+	harsh
+	impatient
+	impolite
+	impulsive
+	inconsiderate
+	irresponsible
+	jealous
+	lazy
+	mean
+	moody
+	nasty
+	naughty
+	narrow-minded
+	nervous
+	obsessive
+	obstinate
+	overcritical
+	overemotional
+	patronizing
+	pessimistic
+	possesive
+	quarrelsome
+	quick-tempered
+	resentful
+	rude
+	ruthless
+	sarcastic
+	secretive
+	selfish
+	sneaky
+	stubborn
+	unkind
+	unpredictable
+	unreliable
+	untidy
+	untrustworthy
+	vague
+	vain
+	vengeful
+	weak
+	
+fur
+  long
+	short
+	soft
+	coarse
+	thick
+	tangled
+	patchy
+	spiky
+	curly
+	messy
+	sleek
+	glossy
+	thin
+	wiry
+	silky
+	well-groomed
+	dirty
+	clean
+	wiry
+	ungroomed
+	matted
+	
+fur2
+  black
+	chocolate
+	cinnamon
+	red
+	cream
+	apricot
+	blue
+	lilac
+	fawn
+	caramel
+	brown
+	light brown
+	blue-gray
+	gray
+	dark gray
+	light gray
+	white
+	amber
+	light amber
+	ginger
+	light ginger
+	sandy
+	dark ginger
+	sorrel
+	silver
+	
+eyecolor
+  green
+	hazel
+	golden yellow
+	lemon yellow
+	amber
+	orange
+	copper
+	blue
+	ice blue
+	blue-and-green
+	blue-and-amber
+	blue-and-yellow
+	blue-and-brown
+	blue-and-green dichroic
+	blue-and-amber dichroic
+	blue-and-yellow dichroic
+	blue-and-brown dichroic
+	
+//kit
+kspec
+  This kit shows much promise as a future {medicine cat|leader}.
+	This kit does quite well at hide-and-seek, and are usually the last one found - perhaps they will make for an exceptional hunter.
+	This kit seems to spend every moment {getting under the medicine cat's paws.^0.5|listening intently to the elders' stories.|playing with the other kits.|sleeping the day away.|scaring the other kits.|pestering the apprentices for training sessions.|arguing with their {father|mother|brother|sister}.^0.5|tossing prey around the camp.^0.5}
+	This kit has a lengthy record of sneaking out of camp.
+	This kit is the strongest of their litter.
+	This kit is the sole survivor of their litter.^0.5
+	This kit was found on the border and taken into the Clan.
+	This kit's {mother|father} perished {in a fierce battle with {a} {enemy Clan.|fox.|pack of foxes.|dog.|pack of dogs|badger.|band of badgers.}^0.5|in a rockslide.|in a fire.|during a greencough outbreak.|when a tree fell.|by falling from the edge of the gorge.|due to battle wounds.}
+//apprentice
+aspec
+  This cat is well-known for collecting {feathers|shells|bones|rocks|flowers|leaves|petals}.
+	This cat enjoys talking and playing with kits.
+	This cat always makes for a good conversation.
+	This cat is popular amongst all the Clans, not just their own.
+	This cat decorates their nest with {feathers|shells|bones|rocks|flowers|petals|leaves}.
+	This cat used to be {a kittypet|a rogue|a loner|from [clan]} before joining their current Clan.
+	This cat holds a fierce grudge against [clan].
+	This cat is known to be a little too friendly outside their own Clan.
+	This cat usually finds talking with others awkward.
+	This cat prefers not to go to the Gatherings.
+	This cat despises the rival Clans.
+	This cat enjoys taking walks through the forest.
+	This cat enjoys talking walks at night.
+	This cat's favorite season is new-leaf.
+	This cat's favorite season is green-leaf.
+	This cat's favorite season is leaf-fall.
+	This cat's favorite season is leaf-bare.
+	This cat enjoys sleeping out in the open, where they can see their starry ancestors.
+	This cat doesn't believe in StarClan.^0.5
+	This cat trains in the Dark Forest.^0.5
+	This cat enjoys lazing about the camp trying to get some sun more than they enjoy training with their mentor.
+	This cat's favorite pasttime is sleeping until sunhigh.
+	This cat frequently skips training sessions.
+	This cat is thought to be the best fighter in their Clan.
+	This cat feels as if they don't belong in their current Clan.
+	This cat secretly sneaks out to meet with loner friends.
+	This cat is known to be a very clumsy apprentice.
+	This cat failed their warrior assessment.^0.5
+	This cat holds their leader in a holy light.
+	This cat very enjoys {going to Gatherings|watching the sunrise|watching the sunset|hunting alone|training alone|sleeping out of camp|sleeping in the same nest as their {brother|sister}|sleeping outside of the den|eating in a secluded corner|teaching kits battle moves}.
+	This cat is terrified of {dogs|foxes|spiders|badgers|the dark|being alone|high places|every bug}.
+	This cat constantly argues with their mentor.
+//warrior
+wspec
+  This cat is well-known for collecting {feathers|shells|bones|rocks|flowers|leaves|petals}.
+	This cat enjoys talking and playing with kits.
+	This cat always makes for a good conversation.
+	This cat is popular amongst all the Clans, not just their own.
+	This cat decorates their nest with {feathers|shells|bones|rocks|flowers|petals|leaves}.
+	This cat used to be {a kittypet|a rogue|a loner|from [clan]} before joining their current Clan.
+	This cat holds a fierce grudge against [clan].
+	This cat is known to be a little too friendly outside their own Clan.
+	This cat usually finds talking with others awkward.
+	This cat prefers not to go to the Gatherings.
+	This cat despises the rival Clans.
+	This cat enjoys taking walks through the forest.
+	This cat enjoys talking walks at night.
+	This cat's favorite season is new-leaf.
+	This cat's favorite season is green-leaf.
+	This cat's favorite season is leaf-fall.
+	This cat's favorite season is leaf-bare.
+	This cat enjoys sleeping out in the open, where they can see their starry ancestors.
+	This cat doesn't believe in StarClan.^0.5
+	This cat trains in the Dark Forest.^0.5
+	This cat enjoys lazing about the camp trying to get some sun more than they enjoy training their apprentice.
+	This cat's favorite pasttime is sleeping until sunhigh.
+	This cat frequently skips training sessions.
+	This cat is thought to be the best fighter in their Clan.
+	This cat feels as if they don't belong in their current Clan.
+	This cat secretly sneaks out to meet with loner friends.
+	This cat is known to be a very clumsy warrior.
+	This cat failed their warrior assessment.^0.5
+	This cat holds their leader in a holy light.
+	This cat really enjoys {going to Gatherings|watching the sunrise|watching the sunset|hunting alone|training alone|sleeping out of camp|sleeping in the same nest as their {brother|sister}|sleeping outside of the den|eating in a secluded corner|teaching kits battle moves}.
+	This cat is terrified of {dogs|foxes|spiders|badgers|the dark|being alone|high places|every bug}.
+//qspec
+qspec
+	She is a permanent queen.^0.5
+	She wants to returncto warrior duties as soon as possible.
+	She is popular amongst all the Clans, not just her own.
+	She decorates her nest with {feathers|shells|bones|rocks|flowers|petals|leaves}.
+	She used to be {a kittypet|a rogue|a loner|from [clan]} before joining their current Clan.
+	She holds a fierce grudge against [clan].
+	She is known to be a little too friendly outside her own Clan.
+	She usually finds talking with others awkward.
+	She prefers not to go to the Gatherings.
+	She despises the rival Clans.
+	She enjoys taking walks through the forest.
+	She enjoys talking walks at night.
+	Her favorite season is new-leaf.
+	Her favorite season is green-leaf.
+	Her favorite season is leaf-fall.
+	Her favorite season is leaf-bare.
+	She enjoys sleeping out in the open, where she can see her starry ancestors.
+	Her doesn't believe in StarClan.^0.5
+	She trains in the Dark Forest.^0.5
+	She enjoys lazing about the camp trying to get some sun.
+	She favorite pasttime is sleeping until sunhigh.
+	She frequently skips training sessions.
+	She is thought to be the best fighter in her Clan.
+	She feels as if she doesn't belong in her current Clan.
+	She secretly sneaks out to meet with loner friends.
+	She is known to be a very clumsy cat.
+	She failed their warrior assessment.^0.5
+	She holds their leader in a holy light.
+	She really enjoys {going to Gatherings|watching the sunrise|watching the sunset|hunting alone|training alone|sleeping out of camp|sleeping in the same nest as their {brother|sister}|sleeping outside of the den|eating in a secluded corner|teaching kits battle moves}.
+	She is terrified of {dogs|foxes|spiders|badgers|the dark|being alone|high places|every bug}.
+
+//leader
+lspec
+  This cat used to be {a kittypet|a rogue|a loner|from [clan]} before joining their current Clan.
+	This cat holds a fierce grudge against [clan].
+	This cat is known to be a little too friendly outside their own Clan.
+	This cat usually finds talking with others awkward.
+	This cat prefers not to go to the Gatherings.
+	This cat despises the rival Clans.
+	This cat enjoys taking walks through the forest.
+	This cat enjoys talking walks at night.
+	This cat's favorite season is new-leaf.
+	This cat's favorite season is green-leaf.
+	This cat's favorite season is leaf-fall.
+	This cat's favorite season is leaf-bare.
+	This cat enjoys sleeping out in the open, where they can see their starry ancestors.
+	This cat doesn't believe in StarClan.^0.5
+	This cat trains in the Dark Forest.^0.5
+	This cat enjoys lazing about the camp trying to get some sun more than they enjoy training their apprentice.
+	This cat's favorite pasttime is sleeping until sunhigh.
+	This cat frequently skips training sessions.
+	This cat is thought to be the best fighter in their Clan.
+	This cat feels as if they don't belong in their current Clan.
+	This cat secretly sneaks out to meet with loner friends.
+	This cat is known to be a very clumsy warrior.
+	This cat failed their warrior assessment.^0.5
+	This cat holds their leader in a holy light.
+	This cat really enjoys {going to Gatherings|watching the sunrise|watching the sunset|hunting alone|training alone|sleeping out of camp|sleeping in the same nest as their {brother|sister}|sleeping outside of the den|eating in a secluded corner|teaching kits battle moves}.
+	This cat is terrified of {dogs|foxes|spiders|badgers|the dark|being alone|high places|every bug}.
+	This cat is a cruel, bloodthirsty leader.
+	This cat is a strong, kind leader.
+	This cat is not the right leader for their Clan.
+	This cat liead and murdered to become leader.
+
+marking
+  white-swirled
+	brindled
+	mackerel tabby
+	classic tabby
+	spotted tabby
+	ticked tabby
+	agouti
+	broken mackerel tabby
+	marbled tabby
+	single-colour
+	oceloid-spotted
+	pinstriped
+	braided tabby
+	sokoke tabby
+	rosetted
+	speckled tabby
+	charcoal spotted bengal
+	charcoal rosetted bengal
+	charcoal marbled bengal
+	calico
+	tortoiseshell
+	accented
+	chimera
+	merle
+	
+	
